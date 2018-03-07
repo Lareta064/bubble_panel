@@ -1,4 +1,6 @@
 .object {
+	position: relative;
+	z-index: 20;
 	background-color: @darckblue;
 	padding: 20px;
 }
@@ -27,15 +29,38 @@
 	font-size: 16px;
 	font-weight: 700;
 	letter-spacing: 2px;
-	overflow: hidden;
-	outline: none;
+	
 	&:hover,
 	&:focus {
 		background-color: #FFF;
 		color: @darckblue;
+		outline: none !important;
 	}
 
 }
 p.form__head {
 	margin-bottom: 25px;
 }
+/*********************/
+/*окно благодарность*/
+.contact-form__success {
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  line-height: 34px;
+  width: 100%;
+  height: auto;
+  background-color: #f3f8fb;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+#answer {
+  font-size: 0;
+}
+/****************************/
