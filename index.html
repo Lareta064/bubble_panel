@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap-theme.css">
 	<link rel="stylesheet" type="text/css" href="libs/owl.carousel/owl.carousel.css">
 	<link rel="stylesheet" type="text/css" href="libs/owl.carousel/owl.theme.default.css">
+	<link rel="stylesheet" type="text/css" href="libs/animate.css">
 
 	<!-- User Syles -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
@@ -36,7 +37,7 @@
 	<![endif]-->
 
     <!--шапка-->
-	<header class="header-page">
+	<header class="header-page" id="header-page">
 		<div class="page-header__navigation">
 			<div class="navbar navbar-inverse navbar-fixed-top">
 				<div class="container">
@@ -51,13 +52,11 @@
 						</div>
 					<div class="collapse navbar-collapse" id="responsive-menu">
 						<ul class="nav navbar-nav navbar-right">
-							<li><a href="#">Пункт 1</a></li>
-							<li><a href="#">Пункт 2</a></li>
-							<li><a href="#">Пункт 3</a></li>
-							<li><a href="#">Пункт 4</a></li>
-							<li><a href="#">Пункт 5</a></li>
-							<li><a href="#">Пункт 6</a></li>
-							<li><a href="#">Пункт 7</a></li>
+							<li><a href="#header-page">Главная</a></li>
+							<li><a href="#catalog">Каталог</a></li>
+							<li><a href="#gallery">Галерея</a></li>
+							<li><a href="#reviews">Отзывы</a></li>
+							<li><a href="#footer">Контакты</a></li>
 						</ul>
 					</div>
 				</div>	
@@ -109,25 +108,25 @@
 			<h2 class="section__head">Почему именно МЫ ?</h2>
 			<div class="row">
 				<div class="col-sm-6 col-md-3">
-					<div class="aboutus-item">
+					<div class="aboutus-item wow fadeInUp">
 						<img src="img/icons/promotion1.png" class="img-responsive" alt="icon">
 						<h3>Профессиональные исполнители</h3>
 					</div>	
 				</div>
 				<div class="col-sm-6 col-md-3">
-					<div class="aboutus-item">
+					<div class="aboutus-item wow fadeInUp">
 						<img src="img/icons/donation1.png" class="img-responsive" alt="icon">
 						<h3>Бережем Ваши деньги и время</h3>
 					</div>	
 				</div>
 				<div class="col-sm-6 col-md-3">
-					<div class="aboutus-item">
+					<div class="aboutus-item wow fadeInUp">
 						<img src="img/icons/gear1.png" class="img-responsive" alt="icon">
 						<h3>Качественное оборудование и материалы</h3>
 					</div>	
 				</div>
 				<div class="col-sm-6 col-md-3">
-					<div class="aboutus-item">
+					<div class="aboutus-item wow fadeInUp">
 						<img src="img/icons/speedometer2.png" class="img-responsive" alt="icon">
 						<h3>Высокая скорость исполнения</h3>
 					</div>	
@@ -143,19 +142,19 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-4">
-						<div class="catalog__item">
+						<div class="catalog__item animated zoomIn">
 							<h3>Пузырьковые колонны</h3>
 							<img src="img/images/columns.jpg" class="img-responsive" alt="catalog">	
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<div class="catalog__item">
+						<div class="catalog__item animated zoomIn">
 							<h3>Пузырьковые панели</h3>
 							<img src="img/images/panels.jpg" class="img-responsive" alt="catalog">
 						</div>
 					</div>	
 					<div class="col-sm-4">
-						<div class="catalog__item">
+						<div class="catalog__item animated zoomIn">
 							<h3>Аквариумы</h3>
 							<img src="img/images/aquariums.jpg" class="img-responsive" alt="catalog">
 						</div>
@@ -174,10 +173,10 @@
 				<div class="benefits__block">
 					<div class="col-sm-8 col-sm-offset-2">
 						<ul>
-							<li>Украшение интерьера. </li>
-							<li>Увлажненитель и очиститель воздуха</li>
-							<li>Релаксация. Журчание воды способствует расслаблению и успокоению. </li>
-							<li>Привлечение внимания. Создает неповторимый эстетический стиль.</li>
+							<li class="wow fadeInRight">Украшение интерьера. </li>
+							<li class="wow fadeInRight">Увлажненитель и очиститель воздуха</li>
+							<li class="wow fadeInRight">Релаксация. Журчание воды способствует расслаблению и успокоению. </li>
+							<li class="wow fadeInRight">Привлечение внимания. Создает неповторимый эстетический стиль.</li>
 						</ul>
 					</div>
 				</div>
@@ -266,10 +265,73 @@
           </div>
        </div>  
       </div>  
-    </section>
-    <!--//этапы-->
-
+    </section>    
     <!--//этапы работы-->
+
+    <!--отзывы-->
+    <section id="reviews" class="section reviews">
+      <div class="container">
+      	<h2 class="section__head">Отзывы наших клиентов</h2>
+      	<div class="row">
+      		<div class="col-sm-6">
+      			<div class="reviews-item">
+      				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user1.jpg">
+      				<blockquote>
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      				</blockquote>
+      			</div>
+      		</div>
+      		<div class="col-sm-6">
+      			<div class="reviews-item">
+      				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user2.jpg">
+      				<blockquote>
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      				</blockquote>
+      			</div>
+      		</div>
+      	</div>
+
+      	<div class="row">
+      		<div class="col-sm-6">
+      			<div class="reviews-item">
+      				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user3.png">
+      				<blockquote>
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      				</blockquote>
+      			</div>
+      		</div>
+      		<div class="col-sm-6">
+      			<div class="reviews-item">
+      				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user4.jpg">
+      				<blockquote>
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      				</blockquote>
+      			</div>
+      		</div>
+      	</div>
+
+      	<div class="row">
+      		<div class="col-sm-6">
+      			<div class="reviews-item">
+      				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user5.jpg">
+      				<blockquote>
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      				</blockquote>
+      			</div>
+      		</div>
+      		<div class="col-sm-6">
+      			<div class="reviews-item">
+      				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user6.jpg">
+      				<blockquote>
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      				</blockquote>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+    </section>   
+    <!--//отзывы-->
+
 
 
 	<!--[if lt IE 9]>
@@ -286,6 +348,7 @@
 	<script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
 	<script src="libs/jquery.vide.min.js"></script>
      <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+     <script src="libs/wow.js"></script>
     <!--мои скрипты-->
 	<script src="js/main.js"></script>
 

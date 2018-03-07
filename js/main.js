@@ -24,7 +24,7 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
 });
 //открываем поп 
 
-/*animated
+/*animated*/
  wow = new WOW( {
      boxClass:     'wow',      // default
     animateClass: 'animated', // default
@@ -34,7 +34,7 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
   }
   )
   wow.init();
-   new WOW().init();*/
+   new WOW().init();
 
 
    //slider owl-carousel

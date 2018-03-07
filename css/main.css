@@ -480,4 +480,20 @@ span.item-number {
 #reviews div.owl-theme div.owl-dots {
   display: none;
 }
+.reviews {
+  background-color: #cccccc;
+}
+.reviews-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 2px 2px 2px 2px rgba(102, 102, 102, 0.3);
+  align-items: center;
+  margin-bottom: 25px;
+}
+.reviews-item img {
+  width: 100px;
+  height: 100px;
+  margin-right: 25px;
+}
 /*# sourceMappingURL=main.css.map */
