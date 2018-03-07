@@ -1,0 +1,35 @@
+.header-page {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-color: blue;
+	background: url("../video.mp4");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding-top: 150px;
+}
+.header-page__video {
+	position: absolute;
+	z-index: -10;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+.header-page__content-slogan{
+	width: 50%;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	padding: 25px;
+	background-color: rgba(0, 0, 51, .8);
+	color: @white;
+	text-align: center;
+	& h3 {
+		font-size: 26px;
+		font-style: italic;
+	}
+}
+

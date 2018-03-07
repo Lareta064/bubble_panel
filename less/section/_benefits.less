@@ -1,0 +1,32 @@
+.benefits {
+	background: url("../img/images/relax1.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.benefits__block {
+	padding: 25px;
+	font-size: 22px;
+	font-weight: 700;
+
+	& li {
+		margin-bottom: 30px;
+		text-align: left;
+		position: relative;
+		padding-left: 30px;
+	}
+}
+
+.benefits__block li::before {
+	content: "";
+	background: url("../img/icons/quality.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+	position: absolute;
+	left: -60px;
+	top: 0;
+	width: 40px;
+	height: 40px;
+}

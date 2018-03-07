@@ -1,0 +1,483 @@
+/*font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/*базовые стили для элементов*/
+/*секция*/
+.section {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+h2.section__head {
+  font-weight: 70;
+  margin-bottom: 80px;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  display: inline-block;
+  color: #000099;
+}
+h2.section__head.white-head::before,
+h2.section__head.white-head::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 50%;
+}
+h2.section__head::before,
+h2.section__head::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #000099;
+  position: absolute;
+  top: 50%;
+}
+h2.section__head::before {
+  left: -130px;
+}
+h2.section__head::after {
+  right: -130px;
+}
+h2.white-head {
+  color: #ffffff;
+}
+/*
+ * Box-sizing-model
+ */
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+ * Responsive images
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+/*
+ * Cursor change on hover on Buttons
+*/
+input[type="submit"] {
+  cursor: pointer;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+.object {
+  background-color: #000033;
+  padding: 20px;
+}
+#contact-form input {
+  display: block;
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#contact-form input:focus {
+  border-color: red;
+}
+#contact-form p {
+  font-size: 16px;
+  color: #ffffff;
+}
+.btn {
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  overflow: hidden;
+  outline: none;
+}
+.btn:hover,
+.btn:focus {
+  background-color: #FFF;
+  color: #000033;
+}
+p.form__head {
+  margin-bottom: 25px;
+}
+.gallery {
+  background-color: #000033;
+}
+/*свойства для картинок*/
+.minimized {
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+.minimized:hover {
+  border: 1px solid yellow;
+}
+/* увеличенная картинка */
+#magnify {
+  display: none;
+  /* position: absolute; upd: 24.10.2016 */
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+#magnify img {
+  width: 100%;
+}
+/* затемняющий фон */
+#overlay {
+  display: none;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#close-popup i {
+  width: 30px;
+  height: 30px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+@keyframes rota {
+  25% {
+    transform: rotate(360deg);
+  }
+}
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/*конец свойства картинок*/
+.image__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.image__wrapper img {
+  width: 19%;
+  height: auto;
+  margin-bottom: 25px;
+}
+.header-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+  background: url("../video.mp4");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 150px;
+}
+.header-page__video {
+  position: absolute;
+  z-index: -10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header-page__content-slogan {
+  width: 50%;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  padding: 25px;
+  background-color: rgba(0, 0, 51, 0.8);
+  color: #ffffff;
+  text-align: center;
+}
+.header-page__content-slogan h3 {
+  font-size: 26px;
+  font-style: italic;
+}
+.aboutus-item {
+  padding: 15px;
+  border-right: 1px solid #cccccc;
+}
+.aboutus-item img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+.aboutus-item h3 {
+  color: #333333;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 700;
+}
+.catalog {
+  background-color: #000033;
+  background: url("../img/bg/water1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 700px;
+  position: relative;
+  width: 100%;
+}
+.catalog__item {
+  padding: 25px;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 40px;
+}
+.catalog__item img {
+  border-radius: 30px;
+  margin-bottom: 40px;
+}
+.catalog__item h3 {
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+.benefits {
+  background: url("../img/images/relax1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.benefits__block {
+  padding: 25px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.benefits__block li {
+  margin-bottom: 30px;
+  text-align: left;
+  position: relative;
+  padding-left: 30px;
+}
+.benefits__block li::before {
+  content: "";
+  background: url("../img/icons/quality.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -60px;
+  top: 0;
+  width: 40px;
+  height: 40px;
+}
+#how-wee-work {
+  margin-bottom: 100px;
+  background: url("../img/bg/bg1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.how-wee-work__row {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+h2.how-wee-work__head {
+  margin-bottom: 90px;
+  width: 90%;
+}
+@media (min-width: 600px) {
+  h2.how-wee-work__head {
+    width: 60%;
+  }
+}
+div.item {
+  margin-bottom: 40px;
+}
+div.item h2 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  font-style: italic;
+  color: #666;
+}
+@media (min-width: 600px) {
+  div.item h2 {
+    font-size: 26px;
+    line-height: 36px;
+  }
+}
+@media (min-width: 768px) {
+  div.item h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media (min-width: 9920px) {
+  div.item h2 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+}
+div.owl-carousel {
+  position: relative;
+}
+div.owl-theme div.owl-dots div.owl-dot span {
+  display: none;
+}
+@media (min-width: 768px) {
+  div.owl-theme div.owl-dots div.owl-dot span {
+    display: block;
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #777;
+  }
+}
+div.owl-theme div.owl-dots div.owl-dot {
+  position: relative;
+}
+div.owl-theme div.owl-dots div.owl-dot:not(:last-child)::before {
+  display: none;
+}
+@media (min-width: 768px) {
+  div.owl-theme div.owl-dots div.owl-dot:not(:last-child)::before {
+    display: block;
+    content: "";
+    /*background: url('../img/right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px solid #777;*/
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    background-color: #777;
+  }
+}
+/*ставим по бокам иконки next and prew*/
+.owl-prev i,
+.owl-next i {
+  color: white;
+}
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+}
+.owl-prev {
+  left: 5px;
+}
+.owl-next {
+  right: 5px;
+}
+/*//ставим по бокам иконки next and prew*/
+/*блок с цифрами под точками пагинации*/
+.dot-number {
+  display: none;
+}
+@media (min-width: 768px) {
+  .dot-number {
+    display: inline-block;
+    padding-left: 20px;
+  }
+}
+span.item-number {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 34px;
+  color: #777;
+}
+/*слайдер с отзывами*/
+#reviews div.owl-theme div.owl-dots {
+  display: none;
+}
+/*# sourceMappingURL=main.css.map */

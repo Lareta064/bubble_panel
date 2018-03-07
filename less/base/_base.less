@@ -1,0 +1,67 @@
+/*font-family: 'PT Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 12px;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+}
+/*базовые стили для элементов*/
+ /*секция*/
+ .section {
+ 	width: 100%;
+ 	padding-top: 60px;
+ 	padding-bottom: 60px;
+ 	text-align: center; 	
+ }
+ 
+ h2.section__head {
+ 	font-weight: 70;
+ 	margin-bottom: 80px;
+ 	font-family: 'Roboto', sans-serif;
+ 	position: relative;
+    display: inline-block;
+    color: #000099;
+ }
+
+ h2.section__head.white-head::before,
+ h2.section__head.white-head::after {
+ 	content: "";
+ 	width: 100px;
+ 	height: 2px;
+ 	background-color: @white; 
+ 	position: absolute;
+ 	top: 50%;	
+ }
+ h2.section__head::before,
+ h2.section__head::after {
+ 	content: "";
+ 	width: 100px;
+ 	height: 2px;
+ 	background-color: #000099; 
+ 	position: absolute;
+ 	top: 50%;	
+ }
+ h2.section__head::before {
+ 	left: -130px;
+ }
+ h2.section__head::after{
+ 	right: -130px;
+ }
+ h2.white-head {
+ 	color: @white;
+ }
