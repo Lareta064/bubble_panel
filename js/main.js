@@ -10,6 +10,9 @@ $(document).ready(function(){
     
    });
 
+    //поэкранная прокрутка
+    $('#fullpage').fullpage();
+
 
 });
 
