@@ -1,9 +1,26 @@
 #how-wee-work {
-  margin-bottom: 100px;
-  background: url("../img/bg/bg1.jpg");
+  position: relative;
+  
+  background: url("../img/bg/bg2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  & h2.section__head {
+    position: relative;
+    z-index: 20;
+  }
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+     background-color:  rgba(0, 0, 0, .4);
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+  }
 }
 .how-wee-work__row {
   
@@ -26,7 +43,7 @@ div.item {
   font-size: 22px;
   line-height: 30px;
   font-style: italic;
-  color: #666;
+  color: #FFF;
      @media(min-width: 600px){
        font-size: 26px;
       line-height: 36px;
@@ -43,7 +60,8 @@ div.item {
   }
 }
 div.owl-carousel {
-  position: relative
+  position: relative;
+  z-index:20;
 }
 
 div.owl-theme div.owl-dots div.owl-dot span {

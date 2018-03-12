@@ -50,7 +50,7 @@ $(document).ready(function() {
       success: function(html){
         $("#contact-form").slideUp(800);
         $('#answer').html(html);
-        //setTimeout(function() {$('#answer').hide();}, 3000);//закрываем окно благодарности
+        setTimeout(function() {$('#answer').hide();}, 3000);//закрываем окно благодарности
         //$('#answer').show();//добавил Русик
         setTimeout(function() {$('.overlay_popup').hide();}, 3000);
       }

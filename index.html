@@ -40,7 +40,7 @@
 	<![endif]-->
 
     <!--шапка-->
-    <div id="fullpage">
+    
 	<header class="section header-page" id="header-page">
 		<div class="page-header__navigation">
 			<div class="navbar navbar-default navbar-fixed-top">
@@ -81,24 +81,7 @@
 			            </div>
 			        
 			        <div class="col-sm-3 col-sm-offset-9">
-					    <div class="popup" id="popup1">
-					        <div class="object text-center">
-					            <form id="contact-form" action= "php/mail.php" method= "POST"> 
-					                <!-- Hidden Required Fields -->
-					              <input type="hidden" name="project_name" value="water">
-					              <input type="hidden" name="admin_email" value="info@mail.ru">
-					              <input type="hidden" name="form_subject" value="Сообщение с сайта">
-					            <!-- END Hidden Required Fields -->
-					                <p class="form__head">Бесплатный расчет заказа</p>
-					                <input type="text" name="name" id="name" placeholder="Ваше имя" required>
-					                <input type="text" class="phone" name="phone" id="phone" placeholder="Телефон" required>
-					                <input type="email" name="email" id="email" placeholder="E-mail" required>
-					                 
-					                <input type="submit" class="btn" value="заказать">
-					            </form>
-					            <div id="answer"></div>    
-					        </div><!--close object-->
-                        </div><!--close popup-->
+					   
 			        </div> <!--close .col-->    
 		        </div>  <!--close .row-->   
 		    </div> <!--close .container-->         
@@ -140,7 +123,7 @@
 						</div>
 					</div>		
 				</div>
-			    <a class="btn btn-catalog" href="#">Бесплатный расчет заказа</a>
+			    <button class="show_popup btn btn-catalog" rel="popup1"><a href="#">Заказать бесплатный расчет</a></button>
 		    </div>
 	</section>
     <!--//что мы делаем-->
@@ -163,7 +146,7 @@
 			</div>
 		</div>
 	</section>
-     <!--//зачем эо вам-->
+     <!--//зачем это вам-->
 
 
      <!--галлерея работ-->
@@ -221,10 +204,10 @@
 	</section>
      <!--//почему мы-->
 
-    <!--этапы работы
+    <!--этапы работы-->
     <section id="how-wee-work" class="section">
       <div class="container">
-        <h2 class="section__head">Как мы работаем</h2>
+        <h2 class="section__head white-head">Как мы работаем</h2>
         <div class="row how-wee-work__row">
           <div class="col-sm-10 col-sm-offset-1">
             <div class="owl-carousel owl-theme text-center">
@@ -250,20 +233,13 @@
               </div>
               <div class="item" data-hash="five">
                 <h2>06</h2>
-                <h2>от Вас постуает заявка с сайта или звонок</h2>
+                <h2>от Вас поступает заявка с сайта или звонок</h2>
               </div>
               <div class="item" data-hash="six">
                 <h2>07</h2>
-                <h2>от Вас постуает заявка с сайта или звонок</h2>
+                <h2>от Вас поступает заявка с сайта или звонок</h2>
               </div>
-              <div class="item" data-hash="seven">
-                <h2>08</h2>
-                <h2>от Вас постуает заявка с сайта или звонок</h2>
-              </div>
-              <div class="item" data-hash="eight">
-                <h2>09</h2>
-                <h2>от Вас постуает заявка с сайта или звонок</h2>
-              </div>
+              
             </div>
             <div class="dot-number text-center">
                  <span class="item-number">1</span>
@@ -273,13 +249,12 @@
                  <span class="item-number">5</span>
                  <span class="item-number">6</span>
                  <span class="item-number">7</span>
-                 <span class="item-number">8</span>
-                 <span class="item-number">9</span>
+                
             </div>
           </div>
        </div>  
       </div>  
-    </section> -->   
+    </section>   
     <!--//этапы работы-->
 
     <!--отзывы-->
@@ -287,68 +262,46 @@
       <div class="container">
       	<h2 class="section__head">Отзывы наших клиентов</h2>
       	<div class="row">
-      		<div class="col-sm-6">
+      		<div class="col-sm-3">
       			<div class="reviews-item">
       				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user1.jpg">
       				<blockquote>
-      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
       				</blockquote>
       			</div>
       		</div>
-      		<div class="col-sm-6">
+      		<div class="col-sm-3">
       			<div class="reviews-item">
       				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user2.jpg">
       				<blockquote>
-      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
       				</blockquote>
       			</div>
       		</div>
-      	</div>
-
-      	<div class="row">
-      		<div class="col-sm-6">
+      		<div class="col-sm-3">
       			<div class="reviews-item">
       				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user3.png">
       				<blockquote>
-      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
       				</blockquote>
       			</div>
       		</div>
-      		<div class="col-sm-6">
+      		<div class="col-sm-3">
       			<div class="reviews-item">
       				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user4.jpg">
       				<blockquote>
-      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
+      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
       				</blockquote>
       			</div>
       		</div>
       	</div>
-
-      	<div class="row">
-      		<div class="col-sm-6">
-      			<div class="reviews-item">
-      				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user5.jpg">
-      				<blockquote>
-      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
-      				</blockquote>
-      			</div>
-      		</div>
-      		<div class="col-sm-6">
-      			<div class="reviews-item">
-      				<img class="reviews-item-user img-responsive img-circle" src="img/reviews/user6.jpg">
-      				<blockquote>
-      					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsa dicta neque ducimus enim quidem voluptatum molestias quod soluta dolores explicabo, nesciunt ipsam quisquam, tempore quos, consectetur, reprehenderit qui possimus!
-      				</blockquote>
-      			</div>
-      		</div>
-      	</div>
-      </div>
+      </div><!--//container-->
     </section>   
     <!--//отзывы-->
 
     <footer id="contact" class="section">
     	<div class="container">
-    		<h2 class="section__head footer__head">Оформить заказ, уточнить условия сотрудничества или прокунсультироваться можно по следующим контактам:</h2>
+    		<h2 class="section__head footer__head">Оформить заказ, уточнить условия сотрудничества или проконсультироваться можно по следующим контактам:</h2>
     		<div class="row">
     			<!--<div class="col-sm-3">
     				<p>г. Екатеринбург</p>
@@ -365,7 +318,38 @@
     		</div>
     	</div>
     </footer>
-   </div>
+    
+
+    <!--popup-->
+  <div class="overlay_popup"></div>
+     <div class="popup" id="popup1">
+        <div class=" wow zoomIn object">
+            <form id="contact-form" action= "php/mail.php" method= "POST"> 
+                <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Куб Квадрат">
+              <input type="hidden" name="admin_email" value="info@kubkvadrat.ru">
+              <input type="hidden" name="form_subject" value="Сообщение с сайта">
+            <!-- END Hidden Required Fields -->
+                <h4>Готовы к переменам к лучшему?</h4>
+                <h4 class="margin-bottom-40"> Мы рады их осуществить.</h4>
+                <div class="form-block-container">
+                  <div class="form-left-container">
+                      <input type="text" name="name" id="name" placeholder="Ваше имя" required>
+                      <input type="text" class="phone" name="phone" id="phone" placeholder="Телефон" required>
+                      <input type="email" name="email" id="email" placeholder="E-mail" required>
+                  </div>
+                    <div class="form-right-container">
+                     <textarea name="message" id="message" rows="7" placeholder="Ваше сообщение" required></textarea>
+                  </div>     
+              </div>
+              <a href="#" id="form-close"><i class="fas fa-times"></i></a>
+              <input type= "submit" class="btn" value="Отправить">
+            </form>
+            <div id="answer"></div>    
+         </div>
+  </div>
+         
+     <!-- //popup -->
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
@@ -374,7 +358,7 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-    <!--библиотеки скриптов-->
+   <!--библиотеки скриптов-->
 	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script src="libs/wow.js"></script>
 	 <!--для прокрутки экраном-->

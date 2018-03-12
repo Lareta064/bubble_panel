@@ -11,7 +11,9 @@ $(document).ready(function(){
    });
 
     /*поэкранная прокрутка
-    $('#fullpage').fullpage();*/
+    $('#fullpage').fullpage({
+    }
+      );*/
 
 
 });
@@ -39,17 +41,28 @@ $('.overlay_popup').click(function() { // Обрабатываем клик по
   wow.init();
    new WOW().init();
 
+$(document).ready(function(){
+  $('#owl-top').owlCarousel({
+  items: 1,
+  loop: true,
+  nav: false,
+  
+    autoplay:true, // автопрокрутка
+    smartSpeed: 3000,
+    autoplayTimeout:4000, // задержка в мс
+  });  
+});
 
    //slider owl-carousel
 $(document).ready(function(){
   $('.owl-carousel').owlCarousel({
   items: 1,
   loop: true,
-  nav: true,
-  navText: ['<i class="fa fa-angle-left fa-2x" aria-hidden="true"></i>',
-              '<i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>'],
+  nav: false,
+  
     autoplay:true, // автопрокрутка
     smartSpeed: 3000,
     autoplayTimeout:4000, // задержка в мс
   });  
 });
+
