@@ -30,30 +30,51 @@ footer {
   text-align: center;
 }
 h2.section__head {
-  font-weight: 70;
+  font-weight: 700;
   margin-bottom: 80px;
   font-family: 'Roboto', sans-serif;
   position: relative;
   display: inline-block;
+  font-size: 26px;
+  line-height: 1.5;
   color: #000099;
+}
+@media (min-width: 480px) {
+  h2.section__head {
+    font-size: 30px;
+  }
 }
 h2.section__head.white-head::before,
 h2.section__head.white-head::after {
-  content: "";
-  width: 100px;
-  height: 2px;
-  background-color: #ffffff;
-  position: absolute;
-  top: 50%;
+  display: none;
+}
+@media (min-width: 768px) {
+  h2.section__head.white-head::before,
+  h2.section__head.white-head::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+  }
 }
 h2.section__head::before,
 h2.section__head::after {
-  content: "";
-  width: 100px;
-  height: 2px;
-  background-color: #000099;
-  position: absolute;
-  top: 50%;
+  display: none;
+}
+@media (min-width: 768px) {
+  h2.section__head::before,
+  h2.section__head::after {
+    display: block;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #000099;
+    position: absolute;
+    top: 50%;
+  }
 }
 h2.section__head::before {
   left: -130px;
@@ -245,6 +266,7 @@ button.show_popup a:hover {
   text-decoration: none !important;
   color: rgba(255, 153, 0, 0.5);
 }
+/*************************/
 /*
  * Box-sizing-model
  */
@@ -394,9 +416,35 @@ textarea {
   flex-wrap: wrap;
 }
 .image__wrapper img {
-  width: 19%;
+  display: inline-block;
+  width: 98%;
   height: 250px;
   margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 480px) {
+  .image__wrapper img {
+    width: 48%;
+    height: 200px;
+  }
+}
+@media (min-width: 768px) {
+  .image__wrapper img {
+    width: 24%;
+    height: 160px;
+  }
+}
+@media (min-width: 992px) {
+  .image__wrapper img {
+    width: 19%;
+    height: 200px;
+  }
+}
+@media (min-width: 1200px) {
+  .image__wrapper img {
+    height: 250px;
+  }
 }
 .header-page {
   position: relative;
@@ -410,7 +458,7 @@ textarea {
   padding-top: 0;
 }
 .header-page__content-slogan {
-  width: 80%;
+  width: 90%;
   font-family: 'Roboto', sans-serif;
   position: absolute;
   top: 60%;
@@ -427,23 +475,49 @@ textarea {
   z-index: 20;
 }
 .header-page__content-slogan h1 {
+  font-size: 26px;
   letter-spacing: 2px;
   margin-bottom: 60px;
 }
+@media (min-width: 480px) {
+  .header-page__content-slogan h1 {
+    font-size: 36px;
+  }
+}
 .header-page__content-slogan h3 {
-  font-size: 26px;
+  font-size: 18px;
   font-style: italic;
   line-height: 1.5;
+}
+@media (min-width: 480px) {
+  .header-page__content-slogan h3 {
+    font-size: 26px;
+  }
+}
+@media (min-width: 480px) {
+  .header-page__content-slogan {
+    padding: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .header-page__content-slogan {
+    width: 80%;
+  }
 }
 #header-page .navbar-nav li > a {
   font-size: 14px;
   font-weight: 700;
 }
 .logo {
-  font-size: 24px;
+  font-size: 18px;
   text-transform: uppercase;
   color: blue !important;
   text-shadow: 0px 1px 1px #dddddd, 0px 2px 1px #d6d6d6, 0px 3px 1px #cccccc, 0px 4px 1px #c5c5c5, 0px 5px 1px #c1c1c1, 0px 6px 1px #bbbbbb, 0px 7px 1px #777777, 0px 8px 3px rgba(100, 100, 100, 0.4), 0px 9px 5px rgba(100, 100, 100, 0.1), 0px 10px 7px rgba(100, 100, 100, 0.15), 0px 11px 9px rgba(100, 100, 100, 0.2), 0px 12px 11px rgba(100, 100, 100, 0.25), 0px 13px 15px rgba(100, 100, 100, 0.3);
+}
+@media (min-width: 480px) {
+  .logo {
+    font-size: 24px;
+  }
 }
 /******************************/
 /*стили слайдера*/
@@ -488,17 +562,32 @@ textarea {
 .aboutus-item {
   padding: 15px;
   border-right: 1px solid #cccccc;
+  margin-bottom: 60px;
 }
 .aboutus-item img {
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 45px;
 }
-.aboutus-item h3 {
+.aboutus-item p {
   color: #333333;
   font-size: 22px;
-  line-height: 34px;
+  line-height: 30px;
   font-weight: 700;
+}
+.aboutus img {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 45px;
+}
+.aboutus p {
+  color: #333333;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 50px;
 }
 .catalog {
   background-color: #000033;
@@ -506,7 +595,6 @@ textarea {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 700px;
   position: relative;
   width: 100%;
 }
@@ -563,10 +651,15 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
-  left: -60px;
+  left: -25px;
   top: 0;
   width: 40px;
   height: 40px;
+}
+@media (min-width: 768px) {
+  .benefits__block li::before {
+    left: -60px;
+  }
 }
 #how-wee-work {
   position: relative;
@@ -637,16 +730,40 @@ div.owl-carousel {
   z-index: 20;
 }
 div.owl-theme div.owl-dots div.owl-dot span {
-  display: none;
+  display: block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   div.owl-theme div.owl-dots div.owl-dot span {
-    display: block;
     margin-right: 20px;
     width: 20px;
     height: 20px;
     background-color: #fff;
     border: 1px solid #777;
+  }
+}
+div.owl-theme div.owl-dots div.owl-dot {
+  position: relative;
+}
+div.owl-theme div.owl-dots div.owl-dot:not(:last-child)::before {
+  display: block;
+  content: "";
+  /*background: url('../img/right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px solid #777;*/
+  width: 10px;
+  height: 1px;
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  background-color: #777;
+}
+@media (min-width: 480px) {
+  div.owl-theme div.owl-dots div.owl-dot:not(:last-child)::before {
+    width: 20px;
   }
 }
 div.owl-theme div.owl-dots div.owl-dot {
@@ -743,11 +860,26 @@ footer .glyphicon {
   margin-right: 20px;
 }
 h2.footer__head {
+  font-size: 18px;
   color: #fff;
   line-height: 1.5;
 }
 h2.footer__head:before,
 h2.footer__head:after {
   display: none;
+}
+@media (min-width: 480px) {
+  h2.footer__head {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) {
+  h2.footer__head {
+    font-size: 28px;
+  }
+}
+footer a {
+  display: inline-block;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=main.css.map */

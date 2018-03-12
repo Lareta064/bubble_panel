@@ -81,8 +81,26 @@
   flex-wrap: wrap;
 
   & img {
-    width: 19%;
+    display: inline-block;
+    width: 98%;
     height: 250px;
     margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+     @media (min-width: 480px){
+      width: 48%;
+      height: 200px;
+     }
+    @media (min-width: 768px){
+      width: 24%;
+      height: 160px;
+     }
+    @media (min-width: 992px){
+       width: 19%;
+       height: 200px;
+     }
+   @media (min-width: 1200px){
+       height: 250px;
+     }
   }
 }

@@ -65,16 +65,43 @@ div.owl-carousel {
 }
 
 div.owl-theme div.owl-dots div.owl-dot span {
-  display: none;
-     @media(min-width: 768px){
-      display: block;
-      margin-right: 20px;
-      width: 20px;
-      height: 20px;
-      background-color: #fff;
-      border:1px solid #777;
-   }
+  display: block;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
 }
+@media (min-width: 480px) {
+  div.owl-theme div.owl-dots div.owl-dot span {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #777;
+  }
+}
+div.owl-theme div.owl-dots div.owl-dot {
+  position: relative;
+}
+div.owl-theme div.owl-dots div.owl-dot:not(:last-child)::before {
+  display: block;
+  content: "";
+  /*background: url('../img/right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-bottom: 1px solid #777;*/
+  width: 10px;
+  height: 1px;
+  position: absolute;
+  right: -3px;
+  top: 50%;
+  background-color: #777;
+}
+@media (min-width: 480px) {
+  div.owl-theme div.owl-dots div.owl-dot:not(:last-child)::before {
+    width: 20px;
+  }
+}
+
 
    
 
