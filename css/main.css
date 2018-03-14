@@ -413,19 +413,35 @@ textarea {
 }
 @media (min-width: 768px) {
   .navbar-phone {
-    top: 16px;
-    left: 30%;
+    top: 18px;
+    left: 32%;
+  }
+}
+@media (min-width: 885px) {
+  .navbar-phone {
+    top: 18px;
+    left: 34%;
   }
 }
 @media (min-width: 992px) {
   .navbar-phone {
     top: 15px;
-    left: 30%;
+    left: 35%;
   }
 }
 .navbar-phone a {
   font-size: 12px;
   font-weight: 700;
+}
+@media (min-width: 480px) {
+  .navbar-phone a {
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-phone a {
+    font-size: 13px;
+  }
 }
 @media (min-width: 992px) {
   .navbar-phone a {

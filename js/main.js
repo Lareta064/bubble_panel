@@ -21,11 +21,11 @@ $(document).ready(function(){
             }
     });
   // End of FancyBox - galery
-
+  //прокрутка блоками
     $('#fullpage').fullpage({
       scrollBar:true
     });
-
+  //прокрутка блоками
 });
 
 //открываем поп 
